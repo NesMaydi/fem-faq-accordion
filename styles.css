@@ -1,0 +1,109 @@
+:root {
+  --bg-page-color: linear-gradient(180deg, #b068e9 0%, #6463e7 100%);
+  --faq-card-bg-color: #ffffff;
+  --faq-active-accordion: #1e1f36;
+  --faq-active-panel: #787887;
+  --faq-inactive-accordion: #4b4c5f;
+  --faq-family-font: "Kumbh Sans", sans-serif;
+  --faq-card-lines: #e8e8ea;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background: var(--bg-page-color);
+  background-repeat: no-repeat;
+  min-height: 768px;
+  font-family: var(--faq-family-font);
+}
+
+.faq-card {
+  width: 327px;
+  height: 535px;
+  margin: 148px auto;
+  background: var(--faq-card-bg-color);
+  box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
+  border-radius: 23px;
+}
+
+.faq-icon-woman-content-mobile {
+  background: url(images/illustration-woman-online-mobile.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 237px;
+  height: 180px;
+  left: 50px;
+  top: 50px;
+}
+
+.faq-pattern-content-mobile{
+    background:url(images/bg-pattern-mobile.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 220px;
+height: 145px;
+position: relative;
+margin-right: 43px;
+margin-left: 44px;
+
+
+}
+
+h1 {
+  text-align: center;
+}
+
+.faq-card-content {
+  width: 279px;
+  height: 355px;
+  margin: auto;
+  
+}
+
+.accordion {
+  color: var(--faq-inactive-accordion);
+  font-size: 13px;
+}
+
+.accordion.active {
+  color: var(--faq-active-accordion);
+  font-weight: 700;
+}
+
+.accordion::after {
+  position: absolute;
+  content: url(images/icon-arrow-down.svg);
+  right: 48px;
+}
+.accordion.active::after {
+  transform: rotate(180deg);
+}
+
+.panel {
+  color: var(--faq-active-panel);
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.4s ease-in-out;
+  opacity: 0;
+  line-height: 18px;
+  font-size: 12px;
+  text-align: left;
+}
+
+.panel.show {
+  opacity: 1;
+  max-height: 40px;
+  margin-bottom: 16px;
+}
+
+.faq-card-line {
+  width: 279px;
+  border: 1px solid var(--faq-card-lines);
+  margin-bottom: 16px;
+}
+
+.attribution {
+  margin-top: 50px;
+}
