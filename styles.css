@@ -133,7 +133,7 @@ h1 {
   }
 }
 
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 425px) and (max-width: 767px) {
   .faq-card {
     width: 360px;
     margin: 140px auto;
@@ -161,7 +161,7 @@ h1 {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .faq-card {
     width: 460px;
     margin: 140px auto;
@@ -181,7 +181,7 @@ h1 {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1139px) {
     .faq-icon-woman-content-mobile{
         margin-left: 130px;
     }
