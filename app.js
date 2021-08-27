@@ -6,13 +6,11 @@ document.addEventListener("DOMContentLoaded", function () {
     hideAll();
     acc[i].onclick = function () {
       const setClassses = !this.classList.contains("active");
-
+      setClass(acc, "active", "remove");
+      setClass(panel, "show", "remove");
       if (setClassses) {
         this.classList.toggle("active");
         this.nextElementSibling.classList.toggle("show");
-      } else {
-        setClass(acc, "active", "remove");
-        setClass(panel, "show", "remove");
       }
     };
   }
